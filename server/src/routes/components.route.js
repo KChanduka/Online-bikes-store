@@ -1,5 +1,5 @@
 import express from "express";
-import Component from "../models/Component.model.js";
+import Component from "../models/components.model.js";
 
 const router = express.Router();
 
@@ -30,7 +30,7 @@ router.post("/add-new", async (req, res) => {
     res.json(savedComponent);
   } catch (error) {
     res.status(500).json({ error: error.message });
-  }
+    }
 }); 
 
 //Get all Components
@@ -65,14 +65,14 @@ router.get("/:id",async(req,res)=>{
 });
 
 //edit component details
-router.put("/edit/:id",async(res,req)=>{
+router.put("/edit/:id",async(req ,res)=>{
     try{
 
         const {name,description,price,imageURL}=req.body;
         const componentId = req.params.id;
 
         //validate the request
-    if(!name|| !description || !pice|| !imageURL){
+    if(!name|| !description || !price|| !imageURL){
         return res.status(400).json({msg: "Not all fields have been entered"});
     }
     
@@ -98,7 +98,7 @@ router.delete("/delete/:id",async(req,res)=>{
     try{
         const componentId = req.params.id;
 
-        await Component.findByIdAndDelete(compoentId);
+        await Component.findByIdAndDelete(componentId);
         res.json({msg:"Component Deleted"});
     }catch(error){
         res.status(500).json({error: error.message});

@@ -7,15 +7,15 @@ const router = express.Router();
 // Pass the accessories details to the request body (title, description, price, image)
 
 router.post('/add-new', async (req, res) => {
-    try{
-        const {name, description, price, imageURL} = req.body;
+    try {
+        const { name, description, price, imageURL } = req.body;
 
-        //Validate the request body
-        if(!name || !description || !price || !imageURL){
-            return res.status(400).json({msg: 'Not all fields have been entered.'});
+        // Validate the request body
+        if (!name || !description || !price || !imageURL) {
+            return res.status(400).json({ msg: 'Not all fields have been entered.' });
         }
 
-        //Create a new accessories instance
+        // Create a new Accessories instance
         const newAccessories = new Accessories({
             name,
             description,
@@ -23,13 +23,13 @@ router.post('/add-new', async (req, res) => {
             imageURL,
         });
 
-        //Save the accessories (await the save operation to complete)
+        // Save the accessories (await the save operation to complete)
         const savedAccessories = await newAccessories.save();
 
-        //Send the saved accessories in the response
+        // Send the saved accessories in the response
         res.json(savedAccessories);
-    }catch(error){
-        res.status(500).json({error: error.message});
+    } catch (error) {
+        res.status(500).json({ error: error.message });
     }
 });
 

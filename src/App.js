@@ -6,6 +6,7 @@ import Hero from "./pages/Hero";
 import Offers from "./pages/Offers";
 import Testimonials from "./pages/Testimonials";
 import Login from "./pages/Login";
+import Admin from "./pages/Admin";
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
     <Offers/>
     <Brands/>
     <Testimonials/>
-    <Footer/> */}
-    <Login/>
+    <Footer/> 
+     <Login/> */}
+      <Admin/> 
   </div>;
 }
 

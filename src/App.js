@@ -5,17 +5,19 @@ import Brands from "./pages/Brands";
 import Hero from "./pages/Hero";
 import Offers from "./pages/Offers";
 import Testimonials from "./pages/Testimonials";
+import Login from "./pages/Login";
 
 
 function App() {
   return <div    className=" px-20"  >
 
-    <Navbar/>
+    {/* <Navbar/>
     <Hero/>
     <Offers/>
     <Brands/>
     <Testimonials/>
-    <Footer/>
+    <Footer/> */}
+    <Login/>
   </div>;
 }
 

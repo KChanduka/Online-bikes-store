@@ -3,6 +3,9 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { BikeRouter } from './routes/bikes.route.js';
+import  ComponentRouter  from './routes/components.route.js';
+// import  AccessoriesRouter  from './routes/accessories.route.js';
+// import  ApperalRouter  from './routes/apperal.route.js';
 
 
 
@@ -28,7 +31,9 @@ app.use(bodyParser.json());
 
 // routers
 app.use ( "/bikes" ,BikeRouter );
-
+app.use ( "/components" ,ComponentRouter );
+// app.use ( "/accessories" ,AccessoriesRouter );
+// app.use ( "/apperal" ,ApperalRouter );
 
 
 // Start the server

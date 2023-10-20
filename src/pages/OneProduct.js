@@ -14,7 +14,7 @@ function OneProduct() {
       <Navbar />
       <div className=" ml-10">
         {/* product name */}
-        <h1 className="text-zinc-400 text-3xl font-semibold mt-16 ">
+        <h1 className="text-zinc-400 text-4xl font-semibold mt-16 ">
           {productName}
         </h1>
         {/* product image, price, like buy add to cart buttons */}

@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import AllProducts from "./pages/AllProducts";
 import OneProduct from "./pages/OneProduct";
+import NavProducts from "./pages/NavProducts";
 
 function App() {
   return <div    className=" px-20"  >
@@ -22,7 +23,8 @@ function App() {
      <Login/>  */}
        {/* <Admin/>   */}
         {/* <AllProducts/> */}
-        <OneProduct/>
+        {/* <OneProduct/> */}
+        <NavProducts/>
   </div>;
 }
 

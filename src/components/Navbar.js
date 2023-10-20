@@ -21,13 +21,16 @@ function Navbar() {
                 <a href="home">Home</a>
             </li>
             <li>
-                <a href="about">About Us</a>
+                <a href="about">Products</a>
             </li>
             <li>
-                <a href="products">Products</a>
+                <a href="products">Services</a>
             </li>
             <li>
                 <a href="products">Brands</a>
+            </li>
+            <li>
+                <a href="products">About us</a>
             </li>
             <li className=" bg-zinc-600 px-3 py-2 rounded-full bg-opacity-60">
                 <a href="contact">Get Started</a>

@@ -26,7 +26,7 @@ function AdminNavBar() {
           <li>
             <a href="products">Brands</a>
           </li>
-          <li className=" bg-green-400 px-3 py-2 rounded-full">
+          <li className=" bg-zinc-500 px-8 py-2 rounded-full bg-opacity-60">
             <a href="contact">Log Out</a>
           </li>
         </ul>

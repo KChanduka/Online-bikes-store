@@ -7,19 +7,22 @@ import Offers from "./pages/Offers";
 import Testimonials from "./pages/Testimonials";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
-
+import AllProducts from "./pages/AllProducts";
+import OneProduct from "./pages/OneProduct";
 
 function App() {
   return <div    className=" px-20"  >
 
-    {/* <Navbar/>
-    <Hero/>
+     {/* <Navbar/>
+     <Hero/>
     <Offers/>
     <Brands/>
     <Testimonials/>
     <Footer/> 
-     <Login/> */}
-      <Admin/> 
+     <Login/>  */}
+       {/* <Admin/>   */}
+        {/* <AllProducts/> */}
+        <OneProduct/>
   </div>;
 }
 

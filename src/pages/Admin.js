@@ -36,7 +36,7 @@ function Admin() {
         {/* column 2 - form */}
         <div className="mt-[110px] ml-[500px]">
           {/* input the form  */}
-          <Update />
+          <Delete />
         </div>
       </div>
     </div>

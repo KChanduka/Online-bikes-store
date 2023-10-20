@@ -29,7 +29,7 @@ function Navbar() {
             <li>
                 <a href="products">Brands</a>
             </li>
-            <li className=" bg-green-400 px-3 py-2 rounded-full">
+            <li className=" bg-zinc-600 px-3 py-2 rounded-full bg-opacity-60">
                 <a href="contact">Get Started</a>
             </li>
         </ul>

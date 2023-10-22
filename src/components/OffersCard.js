@@ -12,7 +12,7 @@ function OffersCard(props) {
       className="bg-cover bg-center relative flex items-center justify-center rounded-lg "
       style={cardStyle}
     >
-      <h1 className="text-white absolute text-2xl font-bold">{props.title}</h1>
+      <h1 className="text-white absolute text-5xl text-opacity-90 font-bold">{props.title}</h1>
     </div>
   );
 }

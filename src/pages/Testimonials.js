@@ -9,7 +9,7 @@ function Testimonials() {
     <div>
       <div>
         <div className=" mt-20 flex justify-center items-center flex-col space-y-10 ">
-          <h1 className=" text-2xl font-bold underline text-zinc-500">
+          <h1 className=" text-2xl font-bold underline text-zinc-500 tracking-widest">
             HEAR WHAT OHTERS HAVE TO SAY
           </h1>
           <div className=" flex  gap-5 flex-col">

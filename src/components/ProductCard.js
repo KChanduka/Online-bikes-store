@@ -2,21 +2,22 @@ import React from 'react';
 import notlike from '../assets/like/notliked.png';
 import test from '../assets/test.png';
 
-function productCard() {
+function productCard(props) {
 
-  let productName= 'Product Name';
-  let productPrice= 233.99;
+  const productName= props.name;
+  const productPrice= props.price;
+  const imgUrl=props.imgUrl;
 
   return (
-    <div className='w-[400px] h-[400px] bg-slate-300  rounded-lg relavtive'>
+    <div className='w-[450px] h-[450px] bg-white  rounded-lg mt-4'>
 
       {/* like button*/}
-      <button className=' absolute left-[460px] mt-2'>
-        <img className='w-[45px]' src={notlike} alt="like" />
+      <button className='mt-2'>
+        <img className='w-[45px] ' src={notlike} alt="like" />
       </button>
       {/* image */}
       <div>
-        <img src={test} alt="product" />
+        <img className="p-2 rounded-2xl" src={imgUrl} alt="product" />
       </div>
       {/* name and price */}
       <div className='flex justify-around'>

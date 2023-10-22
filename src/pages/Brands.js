@@ -11,7 +11,7 @@ function Brands() {
   return (
     <div>
       <div className=" mt-20 flex justify-center items-center flex-col space-y-10 ">
-        <h1 className=" text-2xl font-bold underline text-zinc-500">OUR BRANDS</h1>
+        <h1 className=" text-3xl font-bold underline text-zinc-500 tracking-widest">OUR BRANDS</h1>
         <div className=" flex  gap-5 flex-col">
           <div className=" flex">
             <BrandsCard image={BrandsImage1} />

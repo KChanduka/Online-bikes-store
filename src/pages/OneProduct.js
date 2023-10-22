@@ -5,13 +5,13 @@ import nl from "../assets/like/notliked2.png";
 import MoreImgCards from "../components/MoreImgCards";
 import SimilarProductCard from "../components/SimilarProductCard";
 
-function OneProduct() {
-  let productName = "Product Name";
-  let productDescription = "Product Description";
-  let price = 100;
+function OneProduct(props) {
+  let productName = props.name;
+  let productDescription = props.description;
+  let price = props.price;
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className=" ml-10">
         {/* product name */}
         <h1 className="text-zinc-400 text-4xl font-semibold mt-16 ">

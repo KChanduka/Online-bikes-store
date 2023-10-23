@@ -11,7 +11,7 @@ function OneProduct(props) {
   let price = props.price;
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className=" ml-10">
         {/* product name */}
         <h1 className="text-zinc-400 text-4xl font-semibold mt-16 ">

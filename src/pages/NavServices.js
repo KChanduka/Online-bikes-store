@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 function NavServices() {
   return (
     <div>
+      <Navbar/>
         <div className="flex ">
         {/*  column 1 */}
         <div>

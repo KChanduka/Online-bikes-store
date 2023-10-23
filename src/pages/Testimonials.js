@@ -7,6 +7,7 @@ import TestimonialsImage3 from "../assets/reviews/reviews (3).png";
 function Testimonials() {
   return (
     <div>
+      
       <div>
         <div className=" mt-20 flex justify-center items-center flex-col space-y-10 ">
           <h1 className=" text-2xl font-bold underline text-zinc-500 tracking-widest">

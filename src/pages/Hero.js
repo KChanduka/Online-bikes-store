@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 function Hero() {
   return (
     <div className=" justify-center items-center">
+      <Navbar/>
       {/* hero image */}
       <div className=" flex items-center justify-center">
         <img className=" w-[1100px] absolute top-[80px]  flex justify-center  items-center" src={Banner}></img>

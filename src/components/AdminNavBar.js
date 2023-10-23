@@ -13,7 +13,7 @@ function AdminNavBar() {
 
       {/* nav links */}
       <div className=" flex">
-        <ul className="flex text-2xl  font-bold gap-28">
+        <ul className="flex text-2xl font-medium gap-28 tracking-wider items-center ">
           <li>
             <a href="home">Home</a>
           </li>
@@ -26,7 +26,7 @@ function AdminNavBar() {
           <li>
             <a href="products">Brands</a>
           </li>
-          <li className=" bg-zinc-500 px-8 py-2 rounded-full bg-opacity-60">
+          <li className="bg-zinc-600 px-3 py-2 rounded-full bg-opacity-60 font-bold">
             <a href="contact">Log Out</a>
           </li>
         </ul>

@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import Aboutus from "../assets/Aboutus.jpeg";
 
 function NavAboutus() {
@@ -12,6 +13,7 @@ function NavAboutus() {
 
   return (
     <div>
+      <Navbar/>
         <h1 className="text-zinc-400 text-4xl font-semibold mt-16 mb-9 ">
          ABOUT US
         </h1>

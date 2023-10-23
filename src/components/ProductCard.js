@@ -16,8 +16,8 @@ function productCard(props) {
         <img className='w-[45px] ' src={notlike} alt="like" />
       </button>
       {/* image */}
-      <div>
-        <img className="p-2 rounded-2xl" src={imgUrl} alt="product" />
+      <div className='flex justify-center'>
+        <img className="p-2 rounded-2xl h-80" src={imgUrl} alt="product" />
       </div>
       {/* name and price */}
       <div className='flex justify-around'>

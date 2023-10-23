@@ -1,21 +1,20 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import Logo from "../assets/logoHome.png";
 import fb from "../assets/links/link (2).png";
 import twit from "../assets/links/link (5).png";
 import insta from "../assets/links/link (3).png";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
     <section className="h-screen">
+      <Navbar />
       <div className="h-full">
         {/* Left column container with background */}
         <div className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
           <div className="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12 flex  justify-center">
-            <img
-              src={Logo}
-              className="w-80"
-              alt="Sample image"
-            />
+            <img src={Logo} className="w-80" alt="Sample image" />
           </div>
 
           {/* Right column container */}
@@ -28,12 +27,12 @@ function Login() {
                 {/* Facebook */}
                 <button
                   type="button"
-                //   data-te-ripple-init
-                //   data-te-ripple-color="light"
+                  //   data-te-ripple-init
+                  //   data-te-ripple-color="light"
                   className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   {/* Facebook */}
-                    <img src={fb} alt="facebook" className="mx-auto w-8 "/>
+                  <img src={fb} alt="facebook" className="mx-auto w-8 " />
                 </button>
 
                 {/* Twitter */}
@@ -44,7 +43,7 @@ function Login() {
                   className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   {/* Twitter */}
-                  <img src={insta} alt="insta" className="mx-auto w-7 "/>
+                  <img src={insta} alt="insta" className="mx-auto w-7 " />
                 </button>
 
                 {/* Linkedin */}
@@ -55,7 +54,7 @@ function Login() {
                   className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   {/* Linkedin */}
-                  <img src={twit} alt="facebook" className="mx-auto w-8 "/>
+                  <img src={twit} alt="facebook" className="mx-auto w-8 " />
                 </button>
               </div>
 
@@ -121,14 +120,16 @@ function Login() {
 
               {/* Login button */}
               <div className="text-center lg:text-left">
-              <button className="text-gray-100 hover:text-white border border-gray-400 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-5 mr-2 mb-2 dark:border-gray-200 dark:text-gray-200 dark:hover:text-black dark:hover:bg-white dark:focus:ring-yellow-900  w-48 h-16">LOGIN</button>
+                
 
+                  <Link to={"/login/admin"}><button type="button" className="text-gray-100 hover:text-white border border-gray-400 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-5 mr-2 mb-2  w-48 h-16">Login
+                </button></Link>
                 {/* Register link */}
-                <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
+                <p className="mb-0 mt-2  pt-1 text-sm ">
                   Don't have an account?
                   <a
-                    href="#!"
-                    className="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
+                    href="#"
+                    className=" px-3 text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                   >
                     Register
                   </a>

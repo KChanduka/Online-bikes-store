@@ -1,5 +1,6 @@
 import React from "react";
 import BrandsCard from "../components/BrandsCard";
+import Navbar from "../components/Navbar";
 import BrandsImage1 from "../assets/brands/brans (7).png";
 import BrandsImage2 from "../assets/brands/brans (2).png";
 import BrandsImage3 from "../assets/brands/brans (3).png";
@@ -10,6 +11,7 @@ import BrandsImage6 from "../assets/brands/brans (6).png";
 function Brands() {
   return (
     <div>
+      
       <div className=" mt-20 flex justify-center items-center flex-col space-y-10 ">
         <h1 className=" text-3xl font-bold underline text-zinc-500 tracking-widest">OUR BRANDS</h1>
         <div className=" flex  gap-5 flex-col">

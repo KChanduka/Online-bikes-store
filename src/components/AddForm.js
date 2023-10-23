@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 function AddForm() {
+  //states
+  const [productName, setProductName] = useState("");
+  const [description, setDescription] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+  const [price, setPrice] = useState("");
+
+  //post the data to the database from axios
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post("http://localhost:4000/bikes/add-new", {
+        name: productName,
+        description: description,
+        price: price,
+        imageURL: imageUrl,
+      })
+      .then((res) => {
+
+        //go to the admin page
+        window.location.href = "/products/bikes";
+        console.log(res);
+        console.log(res.data);
+      });
+  }
+
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         {/* input prduct name */}
         <div class="relative z-0 w-full mb-[50px] group">
           <input
@@ -13,6 +39,9 @@ function AddForm() {
             class="block py-3.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
             required
+            onChange={(e) => {
+              setProductName(e.target.value);
+            }}
           />
           <label
             for="productName"
@@ -31,6 +60,9 @@ function AddForm() {
             class="block py-3.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
             required
+            onChange={(e) => {
+              setDescription(e.target.value);
+            }}
           />
           <label
             for="description"
@@ -43,6 +75,9 @@ function AddForm() {
         {/* Image URL */}
         <div class="relative z-0 w-full mb-[50px] group">
           <input
+            onChange={(e) => {
+              setImageUrl(e.target.value);
+            }}
             type="Image URL"
             name="imageUrl"
             id="imageUrl"
@@ -55,6 +90,26 @@ function AddForm() {
             class="peer-focus:font-medium absolute text-2xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             Image URL
+          </label>
+        </div>
+
+        <div class="relative z-0 w-full mb-[50px] group">
+          <input
+            onChange={(e) => {
+              setPrice(e.target.value);
+            }}
+            type="Image URL"
+            name="imageUrl"
+            id="imageUrl"
+            class="block py-3.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="imageUrl"
+            class="peer-focus:font-medium absolute text-2xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Price
           </label>
         </div>
 

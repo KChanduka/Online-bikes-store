@@ -3,12 +3,11 @@ import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import { useEffect, useState } from "react";
 
-function BikeAllProducts() {
-  // let pCard = Pcard("bike", 1000);
+function ApperalAllProducts() {
   const [products, setProducts] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:4000/bikes")
+    fetch("http://localhost:4000/apperal")
       .then((res) => {
         return res.json();
       })
@@ -20,7 +19,7 @@ function BikeAllProducts() {
   console.log(products);
   return (
     <div className=" px-20">
-      <Navbar />
+      <Navbar/>
       <div className="p-10">
         <div className="grid sm:grid-cols-3 space-y-4">
           {products &&
@@ -37,4 +36,4 @@ function BikeAllProducts() {
   );
 }
 
-export default BikeAllProducts;
+export default ApperalAllProducts;
